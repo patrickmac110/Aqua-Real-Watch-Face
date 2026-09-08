@@ -5,6 +5,8 @@ aquarium screensavers. It targets the **Emery** platform and its 200×228,
 64-color reflective display. The companion **Aqua Real Aquarium** project is a
 normal watch app for opening the same scene only when you want to watch it.
 
+![Aqua Real animated preview](qa/aquarium-preview.gif)
+
 ## What it does
 
 - Seven independently moving fish across three perspective depths
@@ -83,11 +85,10 @@ pebble build
 
 The compiled bundle will be written to `build/aquarium.pbw`.
 
-The separate foreground-only aquarium is in the sibling `aquarium-viewer/`
-project. Build it from that directory with the same command; its bundle is
-written to `aquarium-viewer/build/aquarium-viewer.pbw`. It shares the renderer
-and prepared artwork with this project, so keep both sibling directories
-together when building the complete source release.
+The separate foreground-only aquarium is maintained in the
+[Aqua Real Watch App](https://github.com/patrickmac110/Aqua-Real-Watch-App)
+repository. The combined release archive also keeps both projects together so
+the shared renderer can be inspected side by side.
 
 To regenerate the palette-processed art, first install the two asset-pipeline
 dependencies and run:

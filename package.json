@@ -1,0 +1,108 @@
+{
+  "name": "aqua-real",
+  "author": "Patrick McWilliams",
+  "version": "1.7.0",
+  "description": "A weather-aware, battery-reactive animated aquarium watchface for Pebble Time 2.",
+  "homepage": "https://github.com/patrickmac110/Aqua-Real-Watch-Face",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickmac110/Aqua-Real-Watch-Face.git"
+  },
+  "bugs": {
+    "url": "https://github.com/patrickmac110/Aqua-Real-Watch-Face/issues"
+  },
+  "keywords": ["pebble-app", "watchface", "aquarium"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "Aqua Real",
+    "uuid": "2f8c23b6-6f2e-4a93-9b1f-4d4f2eac0817",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": ["emery"],
+    "capabilities": ["configurable"],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "WEATHER_TEMP",
+      "WEATHER_CODE",
+      "WEATHER_IS_DAY",
+      "WEATHER_UNIT",
+      "WEATHER_SKY_PHASE",
+      "SETTINGS_TIME_SCALE",
+      "SETTINGS_DATE_SIZE",
+      "SETTINGS_WEATHER_SIZE",
+      "SETTINGS_WEATHER_BG",
+      "SETTINGS_WEATHER_FG",
+      "SETTINGS_DATE_BOLD",
+      "SETTINGS_DATE_FORMAT",
+      "SETTINGS_TIME_STYLE",
+      "SETTINGS_TIME_FORMAT",
+      "SETTINGS_TIME_FONT",
+      "SETTINGS_GOLD_BRIGHTNESS"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "IMAGE_TANK_BACKGROUND",
+          "file": "images/tank_background.png",
+          "memoryFormat": "8Bit"
+        },
+        {
+          "type": "raw",
+          "name": "RAW_CAUSTIC_FRAMES",
+          "file": "images/caustic_frames.bin"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_CAUSTIC_NOISE",
+          "file": "images/caustic_noise.png",
+          "memoryFormat": "8Bit"
+        },
+        {
+          "type": "raw",
+          "name": "RAW_PLANT_ANIMATION",
+          "file": "images/plant_animation.bin"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_FISH_BUTTERFLY",
+          "file": "images/fish_butterfly.png",
+          "memoryFormat": "8Bit"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_FISH_GOURAMI",
+          "file": "images/fish_gourami.png",
+          "memoryFormat": "8Bit"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_FISH_CLOWN",
+          "file": "images/fish_clown.png",
+          "memoryFormat": "8Bit"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_FISH_TETRA",
+          "file": "images/fish_tetra.png",
+          "memoryFormat": "8Bit"
+        },
+        {
+          "type": "raw",
+          "name": "RAW_DOUBLOON_DIGITS",
+          "file": "images/doubloon_digits.bin"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_MENU_ICON",
+          "file": "images/menu_icon.png",
+          "menuIcon": true,
+          "memoryFormat": "8Bit"
+        }
+      ]
+    }
+  }
+}
